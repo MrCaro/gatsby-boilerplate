@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    box-sizing: border-box;
+    font-size: 1.25rem; // 20px
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+    height: 100%;
+}
+
+body {
+    @apply font-body bg-gray-light;
+}
+
+main {
+    @apply mb-32; //this is contain the main layout component
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @apply font-display font-bold text-gray-full uppercase my-6;
+}
+
+h1 {
+    @apply text-jumbo;
+}
+
+h2 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+p,
+a,
+button {
+    @apply my-4;
+}
+
+a {
+    @apply underline;
+
+    &:hover {
+        @apply no-underline;
+    }
+}
+
+.message-component {
+    @apply py-4 px-2;
+}
+
+
+
